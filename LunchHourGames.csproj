@@ -1,0 +1,369 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <ProjectGuid>{00CF361B-2DED-4D2B-A057-3702E557C8EE}</ProjectGuid>
+    <ProjectTypeGuids>{6D335F3A-9D43-41b4-9D22-F6F17C4BE596};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LunchHourGames</RootNamespace>
+    <AssemblyName>TrailOfTheDead</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <XnaFrameworkVersion>v4.0</XnaFrameworkVersion>
+    <XnaPlatform>Windows</XnaPlatform>
+    <XnaCrossPlatformGroupID>265f82ec-c256-43f8-ae77-36b86c5bc0eb</XnaCrossPlatformGroupID>
+    <ApplicationIcon>Game.ico</ApplicationIcon>
+    <Thumbnail>GameThumbnail.png</Thumbnail>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <ManifestCertificateThumbprint>E69FB2B5252BA4E35C032827BE02C582FE785F3A</ManifestCertificateThumbprint>
+    <ManifestKeyFile>LunchHourGames_TemporaryKey.pfx</ManifestKeyFile>
+    <GenerateManifests>true</GenerateManifests>
+    <SignManifests>true</SignManifests>
+    <XnaUpgrade>
+    </XnaUpgrade>
+    <XnaOutputType>Game</XnaOutputType>
+    <XnaProfile>Reach</XnaProfile>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileUpgradeFlags>
+    </FileUpgradeFlags>
+    <OldToolsVersion>3.5</OldToolsVersion>
+    <UpgradeBackupLocation />
+    <PublishUrl>C:\LHG\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <SupportUrl>http://www.lunchhourgames.com</SupportUrl>
+    <ErrorReportUrl>http://www.lunchhourgames.com</ErrorReportUrl>
+    <TargetCulture>en-US</TargetCulture>
+    <ProductName>Trail of the Dead</ProductName>
+    <PublisherName>Lunch Hour Games</PublisherName>
+    <SuiteName>Lunch Hour Games</SuiteName>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.0.6.0</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\x86\Debug</OutputPath>
+    <DefineConstants>DEBUG;TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>True</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\x86\Release</OutputPath>
+    <DefineConstants>TRACE;WINDOWS</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <NoStdLib>true</NoStdLib>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+    <PlatformTarget>x86</PlatformTarget>
+    <XnaCompressContent>True</XnaCompressContent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>LunchHourGames.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Xna.Framework, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Avatar, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Game, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.GamerServices, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Graphics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Input.Touch, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Net, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Storage, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Video, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=MSIL">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Microsoft.Xna.Framework.Xact, Version=4.0.0.0, Culture=neutral, PublicKeyToken=842cf8be1de50553, processorArchitecture=x86">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="mscorlib">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Core">
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="System.Xml.Linq">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AssetManager.cs" />
+    <Compile Include="Combat\Actions\AttackAction.cs" />
+    <Compile Include="Combat\Actions\ChooseAction.cs" />
+    <Compile Include="Combat\Actions\CombatAction.cs" />
+    <Compile Include="Combat\Actions\DefendAction.cs" />
+    <Compile Include="Combat\Actions\EndTurnAction.cs" />
+    <Compile Include="AI\AttackAI.cs" />
+    <Compile Include="Combat\Actions\MoveAction.cs" />
+    <Compile Include="Combat\Actions\UseAction.cs" />
+    <Compile Include="AI\ZombieAI.cs" />
+    <Compile Include="Combat\Attacks\AttackType.cs" />
+    <Compile Include="Combat\Attacks\CombatAttack.cs" />
+    <Compile Include="Combat\Attacks\LinearAttack.cs" />
+    <Compile Include="Combat\Attacks\ParabolicAttack.cs" />
+    <Compile Include="Combat\Attacks\ZombieAttack.cs" />
+    <Compile Include="Combat\CombatHUDPanel.cs" />
+    <Compile Include="Combat\CombatMenu.cs" />
+    <Compile Include="Combat\CombatTurnBased.cs" />
+    <Compile Include="Combat\Menu\CombatMenuFactory.cs" />
+    <Compile Include="Combat\Menu\CombatMenuItem.cs" />
+    <Compile Include="Common\LHGGraphicsHelper.cs" />
+    <Compile Include="Common\LHGMath.cs" />
+    <Compile Include="Controls\BasicControl.cs" />
+    <Compile Include="Controls\Bookcase.cs" />
+    <Compile Include="Controls\ControlFactory.cs" />
+    <Compile Include="Controls\TextBox.cs" />
+    <Compile Include="Controls\Toolbar.cs" />
+    <Compile Include="Controls\ControlsTestScreen.cs" />
+    <Compile Include="Controls\DialogBox.cs" />
+    <Compile Include="Controls\InputTextField.cs" />
+    <Compile Include="Controls\ItemContainer.cs" />
+    <Compile Include="Controls\ListBox.cs" />
+    <Compile Include="Controls\MessageBox.cs" />
+    <Compile Include="Controls\PopupDrawer.cs" />
+    <Compile Include="Controls\PushButton.cs" />
+    <Compile Include="Controls\Scrollbar.cs" />
+    <Compile Include="Controls\Slider.cs" />
+    <Compile Include="Controls\Tooltip.cs" />
+    <Compile Include="Drawing\DrawCircle.cs" />
+    <Compile Include="GameEntities.cs" />
+    <Compile Include="Combat\Events\CombatEvent.cs" />
+    <Compile Include="Combat\CombatFactory.cs" />
+    <Compile Include="Combat\CombatHUD.cs" />
+    <Compile Include="Combat\CombatInterpreter.cs" />
+    <Compile Include="Combat\Menu\CombatMenu.cs" />
+    <Compile Include="Combat\CombatScreen.cs" />
+    <Compile Include="Combat\CombatScreen2D.cs" />
+    <Compile Include="Combat\CombatSystem.cs" />
+    <Compile Include="Console\DebugState.cs" />
+    <Compile Include="Debugger\CombatState.cs" />
+    <Compile Include="Debugger\DebugEvent.cs" />
+    <Compile Include="Debugger\DebugLog.cs" />
+    <Compile Include="Debugger\DebugMessage.cs" />
+    <Compile Include="Debugger\GameLog.cs" />
+    <Compile Include="Debugger\LHGDebugger.cs" />
+    <Compile Include="Debugger\LHGMemento.cs" />
+    <Compile Include="Debugger\Memento.cs" />
+    <Compile Include="Drawing\DesignScreen.cs" />
+    <Compile Include="GamePlay\Party.cs" />
+    <Compile Include="GamePlay\UserProfile.cs" />
+    <Compile Include="GamePlay\UserProfileFactory.cs" />
+    <Compile Include="Inventory\InventoryStorage.cs" />
+    <Compile Include="Inventory\InventorySystem.cs" />
+    <Compile Include="Sprite\AnimationCallback.cs" />
+    <Compile Include="Sprite\AnimationType.cs" />
+    <Compile Include="Vechicles\Vehicle.cs" />
+    <Compile Include="Inventory\Weapons\Ammo.cs" />
+    <Compile Include="Inventory\InventoryFactory.cs" />
+    <Compile Include="Inventory\InventoryItem.cs" />
+    <Compile Include="Inventory\Money.cs" />
+    <Compile Include="Inventory\Part.cs" />
+    <Compile Include="Inventory\Supply.cs" />
+    <Compile Include="Inventory\Tool.cs" />
+    <Compile Include="Inventory\Weapons\WeaponFactory.cs" />
+    <Compile Include="Obstacles\ObstacleProperties.cs" />
+    <Compile Include="Players\Human.cs" />
+    <Compile Include="Players\Zombie.cs" />
+    <Compile Include="Sprite\SimpleFrame.cs" />
+    <Compile Include="Sprite\StaticSpriteSheet.cs" />
+    <Compile Include="Stage\StageFactory.cs" />
+    <Compile Include="Stage\StagePanel.cs" />
+    <Compile Include="Stage\LHGStage.cs" />
+    <Compile Include="Drawing\LHGCamera.cs" />
+    <Compile Include="Drawing\LHGCursor.cs" />
+    <Compile Include="Drawing\LHGGrid.cs" />
+    <Compile Include="Controls\ProgressBar.cs" />
+    <Compile Include="Drawing\Rectangle3D.cs" />
+    <Compile Include="GameEntity.cs" />
+    <Compile Include="GameFlow.cs" />
+    <Compile Include="Hexagonal\AStar.cs" />
+    <Compile Include="Hexagonal\HexSelection.cs" />
+    <Compile Include="Obstacles\Obstacle.cs" />
+    <Compile Include="Common\LHGCommon.cs" />
+    <Compile Include="Console\ConsoleHistory.cs" />
+    <Compile Include="Console\ConsoleInterpreter.cs" />
+    <Compile Include="Console\DefaultInterpreter.cs" />
+    <Compile Include="Console\KeyBindings.cs" />
+    <Compile Include="GameFactory.cs" />
+    <Compile Include="Combat\CombatLocation.cs" />
+    <Compile Include="Inventory\Weapons\Bullet.cs" />
+    <Compile Include="Console\LHGConsole.cs" />
+    <Compile Include="Inventory\Projectile.cs" />
+    <Compile Include="Inventory\Weapons\Gun.cs" />
+    <Compile Include="Inventory\Store.cs" />
+    <Compile Include="Inventory\Weapons\Weapon.cs" />
+    <Compile Include="Obstacles\ObstacleFactory.cs" />
+    <Compile Include="Obstacles\ObstacleSprite.cs" />
+    <Compile Include="Players\NumberBox.cs" />
+    <Compile Include="Players\PlayerMemento.cs" />
+    <Compile Include="Players\PlayerSprite.cs" />
+    <Compile Include="Players\PlayerFactory.cs" />
+    <Compile Include="Players\PlayerSetup.cs" />
+    <Compile Include="Players\PlayerSpriteSheet.cs" />
+    <Compile Include="Players\RatingScreen.cs" />
+    <Compile Include="Players\Reactions.cs" />
+    <Compile Include="Screen\BackgroundComponent.cs" />
+    <Compile Include="Screen\BackgroundPanel.cs" />
+    <Compile Include="Screen\ButtonMenu.cs" />
+    <Compile Include="Combat\CombatBoard.cs" />
+    <Compile Include="Hexagonal\HexBoard.cs" />
+    <Compile Include="Hexagonal\BoardState.cs" />
+    <Compile Include="Hexagonal\FlatVertice.cs" />
+    <Compile Include="Hexagonal\HexDraw.cs" />
+    <Compile Include="Hexagonal\Hex.cs" />
+    <Compile Include="Hexagonal\HexDirection.cs" />
+    <Compile Include="Hexagonal\HexOrientation.cs" />
+    <Compile Include="Hexagonal\HexPointF.cs" />
+    <Compile Include="Hexagonal\HexState.cs" />
+    <Compile Include="Hexagonal\HexMath.cs" />
+    <Compile Include="Hexagonal\PathFinder.cs" />
+    <Compile Include="Hexagonal\PointyVertice.cs" />
+    <Compile Include="Players\Player.cs" />
+    <Compile Include="GamePlayEvent.cs" />
+    <Compile Include="Screen\GameScreen.cs" />
+    <Compile Include="Screen\GameScreen3D.cs" />
+    <Compile Include="Screen\GameScreenEvent.cs" />
+    <Compile Include="Screen\InputState.cs" />
+    <Compile Include="Screen\LogoScreen.cs" />
+    <Compile Include="Screen\LoadingScreen.cs" />
+    <Compile Include="Screen\MenuComponent.cs" />
+    <Compile Include="Drawing\PrimitiveBatch.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="LunchHourGames.cs" />
+    <Compile Include="Players\PlayerScreen.cs" />
+    <Compile Include="Screen\MessageBalloon.cs" />
+    <Compile Include="Screen\ScreenManager.cs" />
+    <Compile Include="Screen\StartScreen.cs" />
+    <Compile Include="SoundSystem.cs" />
+    <Compile Include="Sprite\AnimatedSprite3D.cs" />
+    <Compile Include="Sprite\AnimationKey.cs" />
+    <Compile Include="Sprite\AnimatedSprite.cs" />
+    <Compile Include="Sprite\Animation.cs" />
+    <Compile Include="Sprite\SimpleSprite.cs" />
+    <Compile Include="Players\DerivedAttributes.cs" />
+    <Compile Include="Players\PrimaryStatistics.cs" />
+    <Compile Include="Players\Skills.cs" />
+    <Compile Include="Screen\Textbox.cs" />
+    <Compile Include="Sprite\SimpleSprite3D.cs" />
+    <Compile Include="Sprite\SpriteSheet.cs" />
+    <Compile Include="Sprite\StaticSprite.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Game.ico" />
+    <Content Include="GameThumbnail.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <NestedContentProject Include="Content\Content.contentproj">
+      <Project>944f81fa-ae2f-43fb-bf36-4d6f95827cd3</Project>
+      <Visible>False</Visible>
+    </NestedContentProject>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.2.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 2.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.0">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.0 %28x86%29</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Xna.Framework.4.0">
+      <Visible>False</Visible>
+      <ProductName>Microsoft XNA Framework Redistributable 4.0</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="LunchHourGames_TemporaryKey.pfx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Scavenge\" />
+    <Folder Include="Sound\" />
+    <Folder Include="Travel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="Content\LunchHourGamesContent.contentproj">
+      <Project>{944F81FA-AE2F-43FB-BF36-4D6F95827CD3}</Project>
+      <Name>LunchHourGamesContent %28Content%29</Name>
+      <XnaReferenceType>Content</XnaReferenceType>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath)\Microsoft\XNA Game Studio\Microsoft.Xna.GameStudio.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

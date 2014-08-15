@@ -1,0 +1,15 @@
+﻿<vechicles>
+  <vechicle referenceName="van">
+    <inventory>
+        <weapon referenceName="pistol" count="1"/>
+        <ammo referenceName="bullet" count="15"/>
+        <ammo referenceName="shotgunShell" count="8"/>
+        <supply referenceName="gasoline" count="1"/>
+        <supply referenceName="flashlight" count="3"/>
+        <weapon referenceName="crossbow"/>
+        <ammo referenceName="arrow" count="3"/>
+        <supply referenceName="food" count="2"/>
+        <supply referenceName="medPack" count="1"/>
+    </inventory>
+  </vechicle>
+</vechicles>

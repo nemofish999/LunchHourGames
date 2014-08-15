@@ -1,0 +1,24 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual C# Express 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunchHourGames", "LunchHourGames.csproj", "{00CF361B-2DED-4D2B-A057-3702E557C8EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LunchHourGamesContent", "Content\LunchHourGamesContent.contentproj", "{944F81FA-AE2F-43FB-BF36-4D6F95827CD3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00CF361B-2DED-4D2B-A057-3702E557C8EE}.Debug|x86.ActiveCfg = Debug|x86
+		{00CF361B-2DED-4D2B-A057-3702E557C8EE}.Debug|x86.Build.0 = Debug|x86
+		{00CF361B-2DED-4D2B-A057-3702E557C8EE}.Release|x86.ActiveCfg = Release|x86
+		{00CF361B-2DED-4D2B-A057-3702E557C8EE}.Release|x86.Build.0 = Release|x86
+		{944F81FA-AE2F-43FB-BF36-4D6F95827CD3}.Debug|x86.ActiveCfg = Debug|x86
+		{944F81FA-AE2F-43FB-BF36-4D6F95827CD3}.Release|x86.ActiveCfg = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

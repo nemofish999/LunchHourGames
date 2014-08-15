@@ -1,0 +1,53 @@
+<weapons>
+	<weapon name="Crowbar" type="melee" atk="1d8" atktype="PtP" range="1" aoe="-1" apcost="3" >
+	    <desc>The initials GF are carved into the handle</desc>
+	</weapon>
+	<weapon name="Machete" type="melee" atk="1d8+2" atk_type="PtP" range="1" aoe="-1" apcost="3" >
+	    <desc>Hockey mask sold separately</desc>
+	</weapon>
+    <weapon name="Baseball Bat" type="melee" atk="1d8" atk_type="PtP" range="1" aoe="concussive" apcost="3">
+	    <desc>Has a lightning bolt and the word 'Wonderboy' etched on the sweet spot</desc>
+	</weapon>
+    <weapon name="Cricket Bat" type="melee" atk="1d8" atk_type="PtP" range="1" aoe="concussive" apcost="3" >
+	    <desc>What the heck was this doing in America?</desc>
+	</weapon>
+    <weapon name="Shovel" type="melee" atk="1d8" atk_type="PtP" range="1" aoe="concussive" apcost="3">
+	    <desc>A shovel is something completely common.  You should not need it described to you.</desc>
+	</weapon>	
+	<weapon name="Knives" type="projectile" atk="1d6" atk_type="PtP" range="5" aoe="none" apcost="4" >
+	<desc>A sharp knife is nothing without a sharp eye. –Klingon Proverb</desc>
+	</weapon>
+	<weapon name="Molotov Cocktail" type="projectile" atk="1d6" atk_type="AoE-3" range="5" aoe="fire" apcost="4" >
+	<desc>You can thank the Finns for this delightful riot staple</desc>
+	</weapon>	
+	<weapon name="Grenade" type="projectile" atk="1d6" atk_type="" range="5" aoe="concussive" apcost="4" >
+	<desc>First shalt thou take out the Holy Pin. Then shalt thou count to three, no more, no less. Three shall be the number thou shalt count, and the number of the counting shall be three.</desc>
+	</weapon>
+	<weapon name="Bow and Arrow" type="projectile" atk="1d8+2" atk_type="ptp" range="8" aoe="" apcost="5" >
+	<desc>‘Tis no greater fun than impaling the undead with fast pointy sticks</desc>
+	</weapon>
+	<weapon referenceName="pistol" displayName="Pistol" type="gun" atk="1d8" atk_type="PtP" range="5" aoe="none" apcost="5" >
+	<desc></desc>
+	</weapon>
+	<weapon name="Shotgun" type="gun" atk="1d10" atk_type="PtP" range="4" aoe="concussive" apcost="5" >
+	<desc></desc>
+	</weapon>
+	<weapon name="SMG" type="gun" atk="1d6" atk_type="PtP" range="6" aoe="none" apcost="2" >
+	<desc></desc>
+	</weapon>
+	<weapon name="Assault Rifle" type="gun" atk="1d6" atk_type="PtP" range="6" aoe="none" apcost="2" >
+	<desc></desc>
+	</weapon>
+	<weapon name="Sniper Rifle" type="gun" atk="1d10" atk_type="PtP" range="9" aoe="none" apcost="7">
+	<desc></desc>
+	</weapon>
+	<weapon name="Grenade Launcher" type="special" atk="1d12" atk_type="AoE" range="7" aoe="concussive" apcost="8" >
+	<desc></desc>
+	</weapon>
+	<weapon name="Rocket Launcher" type="special" atk="1d12+4" atk_type="AoE" range="7" aoe="concussive_fire" apcost="8" >
+	<desc></desc>
+	</weapon>
+	<weapon name="Flame Thrower" type="special" atk="1d10" atk_type="SPR" range="2" aoe="fire" apcost="8" >
+	<desc></desc>
+	</weapon>
+</weapons>

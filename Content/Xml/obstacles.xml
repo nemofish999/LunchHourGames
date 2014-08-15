@@ -1,0 +1,60 @@
+﻿<obstacles>
+  <obstacleGroup groupName="streetlights" displayName="Streetlights" texture="Sprites/Obstacles/streetlight">
+    <properties category="outdoor" subcategory="lighting" canMove="false" canPickup="false"
+                canSeeThru="false" canThrowOver="false" canDestroy="false" canKillPlayer="false"/>
+    <obstacle referenceName="streetlight_dkgray" displayName="Dark Gray Street Light">
+      <frame xOffset="17" yOffset="3" frameWidth="48" frameHeight="102" />
+    </obstacle>
+    <obstacle referenceName="streetlight_red" displayName="Red Street Light">
+      <frame xOffset="66" yOffset="0" frameWidth="65" frameHeight="107"/>
+    </obstacle>
+    <obstacle referenceName="streetlight_green" displayName="Green Street Light">
+      <frame  xOffset="66" yOffset="0" frameWidth="65" frameHeight="107"/>
+    </obstacle>
+    <obstacle referenceName="streetlight_ltgray" displayName="Light Gray Street Light">
+      <frame xOffset="66" yOffset="0" frameWidth="65" frameHeight="107"/>
+    </obstacle>
+  </obstacleGroup>
+  <obstacleGroup group="Trees" displayName="Trees" texture="Sprites/Obstacles/20 Trees">
+    <properties category="outdoor" subcategory="plant" canMove="false" canPickup="false"
+                   canSeeThru="false" canThrowOver="false" canDestroy="false" canKillPlayer="false"/>
+    <obstacle referenceName="tree1" displayName="Tree">
+      <frame xOffset="0" yOffset="0" frameWidth="130" frameHeight="120"/>
+    </obstacle>
+    <obstacle referenceName="tree2" displayName="Tree">
+      <frame xOffset="131" yOffset="0" frameWidth ="130" frameHeight="120" />
+    </obstacle>
+    <obstacle referenceName="tree3" displayName="Tree">
+      <frame frameWidth="130" frameHeight="120" xOffset="161" yOffset="0"/>
+    </obstacle>
+    <obstacle referenceName="tree12" displayName="Tree">
+      <frame frameWidth="90" frameHeight="120" xOffset="23" yOffset="254"/>
+    </obstacle>
+    <obstacle referenceName="tree20" displayName="Tree">
+      <frame frameWidth="98" frameHeight="102" xOffset="395" yOffset="530"/>
+    </obstacle>
+  </obstacleGroup>
+  <obstacleGroup group="walls" displayName="Walls" texture="Sprites/Obstacles/wall">
+    <properties category="outdoor" subcategory="wall" canMove="false" canPickup="false"
+                canSeeThru="false" canThrowOver="true" canDestroy="false" canKillPlayer="false"/>
+    <obstacle referenceName="horizwall" displayName="Horizontal Wall">
+      <frame xOffset="0" yOffset="3" frameWidth="1090" frameHeight="112" />
+    </obstacle>
+    <obstacle referenceName="vertwall" displayName="Vertical Wall">
+      <frame xOffset="4" yOffset="133" frameWidth="66" frameHeight="630"/>
+    </obstacle>
+  </obstacleGroup>
+  <obstacleGroup referenceName="barrels" displayName="Barrels" texture="Sprites/Obstacles/steelbarrels">
+    <properties category="outdoor" subcategory="military" canMove="false" canPickup="false"
+                canSeeThru="true" canThrowOver="true" canDestroy="true" canKillPlayer="false"/>
+    <obstacle referenceName="rolledbarrel" displayName="Rolled Over Barrel">
+      <frame xOffset="14" yOffset="160" frameWidth="76" frameHeight="70"/>
+    </obstacle>
+    <obstacle referenceName="sunkenbarrel" displayName="Sunken Barrel">
+      <frame  xOffset="6" yOffset="323" frameWidth="54" frameHeight="52"/>
+    </obstacle>
+    <obstacle referenceName="radioactive" displayName="Radioactive Barrel">
+      <frame  xOffset="389" yOffset="579" frameWidth="58" frameHeight="62"/>
+    </obstacle>
+  </obstacleGroup>
+</obstacles>

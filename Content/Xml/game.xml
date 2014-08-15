@@ -1,0 +1,9 @@
+<game>
+  <profile type="default">
+    <player type="main"></player>
+  </profile>
+      
+    <level displayName="Level 1" referenceName="level1" difficulty="easy">
+        <combat referenceName="combat1"/>        
+    </level>
+</game>

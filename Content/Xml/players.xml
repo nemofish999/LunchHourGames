@@ -1,0 +1,476 @@
+<players>
+          <!-- TO DO: Need to calc stats based on level, we also need a way to track XP (experience) - 
+          each hit or certain actions a player makes will cause them to gain XP, which will also
+          generate their level as well.  The stats for Player Characters (humans) will be 
+          dynamically changing based on their level (and XP), the stats for Non Player Characters
+          such as zombies, other human foes or animals will not change.-->
+    
+          <!-- TO DO:  We also need to find a place to setup action points (AP) and Hit Points (HP) 
+          for zombies.  Those will be set per zombie level and will not change per zombie.  We will
+          have specific zombie creatures (like green could be level 1, pink level 2, etc) and they
+          will each have their own HP and AP based on that type of zombie, so those will not change
+          like the Player Characters will as they level.-->
+  
+  <player referenceName="arno" type="human">
+       <stats strength ="5" utilization="5" resourcefulness="5" vitality="5" intelligence="5" vision="5" agility="5" luck="5" />       
+       <hud texture="Sprites/Players/Arno Combat HUD"/>
+       <animations>
+            <animation type="walking" texture="Sprites/Players/Arno Walking All" mode="combat" framesPerSecond="5">
+                <position facing="n"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+				        <position facing="ne" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+				        <position facing="e"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+				        <position facing="se" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+				        <position facing="s"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+				        <position facing="sw" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+				        <position facing="w"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+				        <position facing="nw" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>				
+            </animation>
+            <animation type="running" texture="Sprites/Players/Arno Running All" mode="combat" framesPerSecond="5">
+              <position facing="n"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+              <position facing="ne" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+              <position facing="e"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+              <position facing="se" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+              <position facing="s"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+              <position facing="sw" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+              <position facing="w"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+              <position facing="nw" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+            </animation>
+            <animation type="standing" texture="Sprites/Players/Arno Stopped All" mode="combat" framesPerSecond="5">
+              <position facing="n"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+              <position facing="ne" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+              <position facing="e"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+              <position facing="se" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+              <position facing="s"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+              <position facing="sw" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+              <position facing="w"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+              <position facing="nw" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+            </animation>
+        </animations>
+        <inventory>
+          <weapon referenceName="pistol"/>
+          <ammo referenceName="bullet" count="15"/>
+        </inventory>
+        <actions>
+      
+        </actions>
+    </player>  
+  <player referenceName="freya" type="human">
+    <stats strength ="5" utilization="5" resourcefulness="5" vitality="5" intelligence="5" vision="5" agility="5" luck="5" />
+    <hud texture="Sprites/Players/Freya Combat HUD"/>
+    <animations>
+      <animation type="walking" texture="Sprites/Players/Freya Walking All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+      <animation type="running" texture="Sprites/Players/Freya Running All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="8" frameWidth="128" frameHeight="128" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="8" frameWidth="128" frameHeight="128" xOffset="0" yOffset="129"/>
+        <position facing="e"  frameCount="8" frameWidth="128" frameHeight="128" xOffset="0" yOffset="257"/>
+        <position facing="se" frameCount="8" frameWidth="128" frameHeight="128" xOffset="0" yOffset="385"/>
+        <position facing="s"  frameCount="8" frameWidth="128" frameHeight="128" xOffset="0" yOffset="513"/>
+        <position facing="sw" frameCount="8" frameWidth="128" frameHeight="128" xOffset="0" yOffset="641"/>
+        <position facing="w"  frameCount="8" frameWidth="128" frameHeight="128" xOffset="0" yOffset="769"/>
+        <position facing="nw" frameCount="8" frameWidth="128" frameHeight="128" xOffset="0" yOffset="897"/>
+      </animation>
+      <animation type="standing" texture="Sprites/Players/Freya Stopped All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+      <animation type="beenhit" texture="Sprites/Players/Freya Been Hit All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+      <animation type="fallingdown" texture="Sprites/Players/Freya Falling Down All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="11" frameWidth="128" frameHeight="128" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="11" frameWidth="128" frameHeight="128" xOffset="0" yOffset="129"/>
+        <position facing="e"  frameCount="11" frameWidth="128" frameHeight="128" xOffset="0" yOffset="257"/>
+        <position facing="se" frameCount="11" frameWidth="128" frameHeight="128" xOffset="0" yOffset="385"/>
+        <position facing="s"  frameCount="11" frameWidth="128" frameHeight="128" xOffset="0" yOffset="513"/>
+        <position facing="sw" frameCount="11" frameWidth="128" frameHeight="128" xOffset="0" yOffset="641"/>
+        <position facing="w"  frameCount="11" frameWidth="128" frameHeight="128" xOffset="0" yOffset="769"/>
+        <position facing="nw" frameCount="11" frameWidth="128" frameHeight="128" xOffset="0" yOffset="897"/>
+      </animation>
+      <animation type="attacking" texture="Sprites/Players/Freya Hand Attack All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="13" frameWidth="128" frameHeight="128" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="13" frameWidth="128" frameHeight="128" xOffset="0" yOffset="129"/>
+        <position facing="e"  frameCount="13" frameWidth="128" frameHeight="128" xOffset="0" yOffset="257"/>
+        <position facing="se" frameCount="13" frameWidth="128" frameHeight="128" xOffset="0" yOffset="385"/>
+        <position facing="s"  frameCount="13" frameWidth="128" frameHeight="128" xOffset="0" yOffset="513"/>
+        <position facing="sw" frameCount="13" frameWidth="128" frameHeight="128" xOffset="0" yOffset="641"/>
+        <position facing="w"  frameCount="13" frameWidth="128" frameHeight="128" xOffset="0" yOffset="769"/>
+        <position facing="nw" frameCount="13" frameWidth="128" frameHeight="128" xOffset="0" yOffset="897"/>
+      </animation>
+    </animations>
+  </player>
+
+  <player referenceName="stan" type="human">
+    <stats strength ="5" utilization="5" resourcefulness="5" vitality="5" intelligence="5" vision="5" agility="5" luck="5" />
+    <hud texture="Sprites/Players/Stan Combat HUD"/>
+    <animations>
+      <animation type="walking" texture="Sprites/Players/Stan Walking All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+      <animation type="running" texture="Sprites/Players/Stan Running All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+      <animation type="standing" texture="Sprites/Players/Stan Stopped All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+      <animation type="beenhit" texture="Sprites/Players/Stan Been Hit All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="7" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="7" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="7" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="7" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="7" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="7" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="7" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="7" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+      <animation type="fallingdown" texture="Sprites/Players/Stan Falls Down All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+      <animation type="attacking" texture="Sprites/Players/Stan Attack All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+    </animations>
+  </player>
+
+  <player referenceName="soldier" type="human">
+    <stats strength ="5" utilization="5" resourcefulness="5" vitality="5" intelligence="5" vision="5" agility="5" luck="5" />
+    <hud texture="Sprites/Players/Soldier Combat HUD"/>
+    <animations>
+      <animation type="walking" texture="Sprites/Players/Soldier Walking All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+      <animation type="running" texture="Sprites/Players/Soldier Running All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+      <animation type="standing" texture="Sprites/Players/Soldier Stopped All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+      <animation type="beenhit" texture="Sprites/Players/Soldier Been Hit All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+      <animation type="idle" texture="Sprites/Players/Soldier Greeting All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+      <animation type="attacking" texture="Sprites/Players/Soldier Shooting All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+    </animations>
+    <inventory>
+      <weapon referenceName="pistol"/>
+      <ammo referenceName="bullet" count="35"/>
+    </inventory>
+  </player>
+
+  <player referenceName="burra" type="human">
+    <stats strength ="5" utilization="5" resourcefulness="5" vitality="5" intelligence="5" vision="5" agility="5" luck="5" />
+    <hud texture="Sprites/Players/Burra Combat HUD"/>
+    <animations>
+      <animation type="walking" texture="Sprites/Players/Burra Walking All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+      <animation type="running" texture="Sprites/Players/Burra Running All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+      <animation type="standing" texture="Sprites/Players/Burra Stopped All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+      <animation type="beenhit" texture="Sprites/Players/Burra Been Hit All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="7" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="7" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="7" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="7" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="7" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="7" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="7" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="7" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+      <animation type="attacking" texture="Sprites/Players/Burra Attack All" mode="combat" framesPerSecond="5">
+        <position facing="n"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+        <position facing="ne" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+        <position facing="e"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+        <position facing="se" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+        <position facing="s"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+        <position facing="sw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+        <position facing="w"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+        <position facing="nw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+      </animation>
+    </animations>
+  </player>
+  
+  <player referenceName="greenzombie" type="zombie">
+        <stats strength ="20" utilization="3" resourcefulness="3" vitality="9" intelligence="2" vision="5" agility="3" luck="1" />
+        <animations>
+            <animation type="walking" texture="Sprites/Players/Green Walking All" mode="combat" framesPerSecond="5">
+                <position facing="n"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+                <position facing="ne" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+				        <position facing="e"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+                <position facing="se" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+                <position facing="s"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+                <position facing="sw" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+                <position facing="w"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+                <position facing="nw" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+			      </animation>
+            <animation type="standing" texture="Sprites/Players/Green Zombie Stopped All" mode="combat" framesPerSecond="5">
+                <position facing="n"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+                <position facing="ne" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+                <position facing="e"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+                <position facing="se" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+                <position facing="s"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+                <position facing="sw" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+                <position facing="w"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+                <position facing="nw" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+            </animation>
+            <animation type="beenhit" texture="Sprites/Players/Green Been Hit All" mode="combat" framesPerSecond="5">
+                <position facing="n"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+                <position facing="ne" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+                <position facing="e"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+                <position facing="se" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+                <position facing="s"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+                <position facing="sw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+                <position facing="w"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+                <position facing="nw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+            </animation>
+            <animation type="attacking" texture="Sprites/Players/Green Attack All" mode="combat" framesPerSecond="5">
+                <position facing="n"  frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+                <position facing="ne" frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+                <position facing="e"  frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+                <position facing="se" frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+                <position facing="s"  frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+                <position facing="sw" frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+                <position facing="w"  frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+                <position facing="nw" frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+            </animation>
+            <animation type="dying" texture="Sprites/Players/Green Disintegrate All" mode="combat" framesPerSecond="5">
+                <position facing="n"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+                <position facing="ne" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+                <position facing="e"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+                <position facing="se" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+                <position facing="s"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+                <position facing="sw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+                <position facing="w"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+                <position facing="nw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+            </animation>
+        </animations>
+    </player>
+   
+    <player referenceName="redzombie" type="zombie">
+      <stats strength ="20" utilization="3" resourcefulness="3" vitality="9" intelligence="2" vision="5" agility="3" luck="1" />
+      <animations>
+        <animation type="walking" texture="Sprites/Players/Red Walking All" mode="combat" framesPerSecond="5">
+          <position facing="n"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+          <position facing="ne" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+          <position facing="e"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+          <position facing="se" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+          <position facing="s"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+          <position facing="sw" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+          <position facing="w"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+          <position facing="nw" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+        </animation>
+        <animation type="standing" texture="Sprites/Players/Red Zombie Stopped All" mode="combat" framesPerSecond="5">
+          <position facing="n"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+          <position facing="ne" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+          <position facing="e"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+          <position facing="se" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+          <position facing="s"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+          <position facing="sw" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+          <position facing="w"  frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+          <position facing="nw" frameCount="1" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+        </animation>
+        <animation type="beenhit" texture="Sprites/Players/Red Been Hit All" mode="combat" framesPerSecond="5">
+          <position facing="n"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+          <position facing="ne" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+          <position facing="e"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+          <position facing="se" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+          <position facing="s"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+          <position facing="sw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+          <position facing="w"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+          <position facing="nw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+        </animation>
+        <animation type="attacking" texture="Sprites/Players/Red Attack All" mode="combat" framesPerSecond="5">
+          <position facing="n"  frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+          <position facing="ne" frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+          <position facing="e"  frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+          <position facing="se" frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+          <position facing="s"  frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+          <position facing="sw" frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+          <position facing="w"  frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+          <position facing="nw" frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+        </animation>
+        <animation type="dying" texture="Sprites/Players/Red Disintegrate All" mode="combat" framesPerSecond="5">
+          <position facing="n"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+          <position facing="ne" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+          <position facing="e"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+          <position facing="se" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+          <position facing="s"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+          <position facing="sw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+          <position facing="w"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+          <position facing="nw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+        </animation>
+      </animations>
+    </player>
+    
+    <player referenceName="pinkzombie" type="zombie">
+      <stats strength ="20" utilization="3" resourcefulness="3" vitality="9" intelligence="2" vision="5" agility="3" luck="1" />
+      <animations>
+        <animation type="walking" texture="Sprites/Players/Pink Zombie Walking All" mode="combat" framesPerSecond="5">
+          <position facing="n"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+          <position facing="ne" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+          <position facing="e"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+          <position facing="se" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+          <position facing="s"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+          <position facing="sw" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+          <position facing="w"  frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+          <position facing="nw" frameCount="8" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+        </animation>
+        <animation type="beenhit" texture="Sprites/Players/Pink Zombie Been Hit All" mode="combat" framesPerSecond="5">
+          <position facing="n"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+          <position facing="ne" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+          <position facing="e"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+          <position facing="se" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+          <position facing="s"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+          <position facing="sw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+          <position facing="w"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+          <position facing="nw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+        </animation>
+        <animation type="attacking" texture="Sprites/Players/Pink Zombie Attack All" mode="combat" framesPerSecond="5">
+          <position facing="n"  frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+          <position facing="ne" frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+          <position facing="e"  frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+          <position facing="se" frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+          <position facing="s"  frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+          <position facing="sw" frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+          <position facing="w"  frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+          <position facing="nw" frameCount="11" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+        </animation>
+        <animation type="dying" texture="Sprites/Players/Pink Zombie Disintegrate All" mode="combat" framesPerSecond="5">
+          <position facing="n"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="0"/>
+          <position facing="ne" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="97"/>
+          <position facing="e"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="194"/>
+          <position facing="se" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="291"/>
+          <position facing="s"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="388"/>
+          <position facing="sw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="485"/>
+          <position facing="w"  frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="582"/>
+          <position facing="nw" frameCount="9" frameWidth="96" frameHeight="96" xOffset="0" yOffset="679"/>
+        </animation>
+      </animations>
+    </player>
+</players>

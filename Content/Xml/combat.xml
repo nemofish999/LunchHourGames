@@ -1,0 +1,190 @@
+﻿<combatsystem>
+  <menu background="">
+    <item referenceName="combatMove" type="Move" displayOnStart="true">
+      <pushbutton referenceName="movePlayerButton" displayName="" type="image" initState="up" 
+                  pressedTexture="" releasedTexture="" hoverTexture="">
+        <tooltip type="simple" text="Move Player"/>
+      </pushbutton>
+    </item>
+    <item referenceName="combatAttack" type="Attack" displayOnStart="true"></item>
+    <item referenceName="combatDefend" type="defend" displayOnStart="true"></item>
+    <item referenceName="combatUse"></item>
+    <item referenceName="combatInventory"></item>
+    <item referenceName="combatEndTurn"></item>
+    <item referenceName="combatOptions"></item>
+    <item referenceName="combatPistol" type="Attack" displayOnStart="false"></item>
+    <item referenceName="combatKnife" type="Attack" displayOnStart="false"></item>
+    <item referenceName="combatGranade"></item>
+    <item referenceName="combatFlashlight"></item>    
+  </menu>
+  <combat referenceName="combat1" displayName="Chapter 1:  The City" >
+    <board type="hexagonal">
+      <dimensions size="25" height="15" width="20" xOffset="0" yOffset="0" penWidth="2" orientation="pointy" projection="3d" red="0" green="128" blue="64"/>
+      <colors>
+        <background red="0" green="128" blue="64"/>
+        <selectedPlayer red="0" green="0" blue="255"/>
+        <moveRadius red="0" green="0" blue="255"/>
+        <moveSelect red="0" green="255" blue="0"/>
+        <attackRadius red="255" green="0" blue="0"/>
+      </colors>
+      <gameEntities>
+        <heroes>
+          <player rank="main">
+            <location row="9" col="9" facing="ne" animation="walking"/>
+          </player>
+          <player rank="associate1">
+            <location row="9" col="10" facing="ne" animation="walking"/>
+          </player>
+        </heroes>
+        <enemies>
+          <player referenceName="greenzombie" name="Zombie 1">
+            <stats strength ="20" utilization="3" resourcefulness="3" vitality="9"
+                   intelligence="2" vision="5" agility="3" luck="1" />
+            <location row="2" col="14" facing="sw" animation="walking"/>
+          </player>
+          <player referenceName="greenzombie" name="Zombie 2">
+            <stats strength ="20" utilization="3" resourcefulness="3" vitality="9"
+                     intelligence="2" vision="5" agility="3" luck="1" />
+            <location row="9" col="13" facing="w" animation="walking"/>
+          </player>
+          <player referenceName="greenzombie" name="Zombie 3">
+            <stats strength ="20" utilization="3" resourcefulness="3" vitality="9"
+                      intelligence="2" vision="5" agility="3" luck="1" />
+            <location row="4" col="6" facing="se" animation="walking"/>
+          </player>
+          <player referenceName="greenzombie" name="Zombie 4">
+            <stats strength ="20" utilization="3" resourcefulness="3" vitality="9"
+                   intelligence="2" vision="5" agility="3" luck="1" />
+            <location row="2" col="5" facing="sw" animation="walking"/>
+          </player>
+          <player referenceName="greenzombie" name="Zombie 5">
+            <stats strength ="20" utilization="3" resourcefulness="3" vitality="9"
+                   intelligence="2" vision="5" agility="3" luck="1" />
+            <location row="3" col="11" facing="e" animation="walking"/>
+          </player>
+          <player referenceName="greenzombie" name="Zombie 6">
+            <stats strength ="20" utilization="3" resourcefulness="3" vitality="9"
+                   intelligence="2" vision="5" agility="3" luck="1" />
+            <location row="3" col="14" facing="ne" animation="walking"/>
+          </player>
+          <player referenceName="greenzombie" name="Zombie 7">
+            <stats strength ="20" utilization="3" resourcefulness="3" vitality="9"
+                   intelligence="2" vision="5" agility="3" luck="1" />
+            <location row="8" col="11" facing="nw" animation="walking"/>
+          </player>
+          <player referenceName="greenzombie" name="Zombie 8">
+            <stats strength ="20" utilization="3" resourcefulness="3" vitality="9"
+                   intelligence="2" vision="5" agility="3" luck="1" />
+            <location row="5" col="9" facing="w" animation="walking"/>
+          </player>
+          <player referenceName="greenzombie" name="Zombie 9">
+            <stats strength ="20" utilization="3" resourcefulness="3" vitality="9"
+                   intelligence="2" vision="5" agility="3" luck="1" />
+            <location row="11" col="8" facing="sw" animation="walking"/>
+          </player>
+          <player referenceName="greenzombie" name="Zombie 10">
+            <stats strength ="20" utilization="3" resourcefulness="3" vitality="9"
+                   intelligence="2" vision="5" agility="3" luck="1" />
+            <location row="11" col="7" facing="sw" animation="walking"/>
+          </player>
+          <player referenceName="greenzombie" name="Zombie 11">
+            <stats strength ="20" utilization="3" resourcefulness="3" vitality="9"
+                   intelligence="2" vision="5" agility="3" luck="1" />
+            <location row="14" col="7" facing="sw" animation="walking"/>
+          </player>
+          <player referenceName="greenzombie" name="Zombie 11">
+            <stats strength ="20" utilization="3" resourcefulness="3" vitality="9"
+                   intelligence="2" vision="5" agility="3" luck="1" />
+            <location row="14" col="8" facing="sw" animation="walking"/>
+          </player>
+          <player referenceName="greenzombie" name="Zombie 11">
+            <stats strength ="20" utilization="3" resourcefulness="3" vitality="9"
+                   intelligence="2" vision="5" agility="3" luck="1" />
+            <location row="3" col="8" facing="sw" animation="walking"/>
+          </player>
+        </enemies>
+        <obstacles>
+          <obstacle referenceName="tree20">
+            <location row="13" col="13"/>
+          </obstacle>
+          <obstacle referenceName="tree20">
+            <location row="5" col="0"/>
+          </obstacle>
+          <obstacle referenceName="tree2">
+            <location row="9" col="0"/>
+          </obstacle>
+          <obstacle referenceName="tree20">
+            <location row="11" col="0"/>
+          </obstacle>
+          <obstacle referenceName="tree20">
+            <location row="7" col="6"/>
+          </obstacle>
+          <obstacle referenceName="tree20">
+            <location row="13" col="5"/>
+          </obstacle>
+          <obstacle referenceName="tree20">
+            <location row="5" col="11"/>
+          </obstacle>
+          <obstacle referenceName="tree20">
+            <location row="2" col="17"/>
+          </obstacle>
+          <obstacle referenceName="tree20">
+            <location row="0" col="9"/>
+          </obstacle>
+          <obstacle referenceName="tree20">
+            <location row="0" col="10"/>
+          </obstacle>
+          <obstacle referenceName="tree20">
+            <location row="0" col="11"/>
+          </obstacle>
+          <obstacle referenceName="tree20">
+            <location row="0" col="15"/>
+          </obstacle>
+          <obstacle referenceName="tree20">
+            <location row="0" col="16"/>
+          </obstacle>
+          <obstacle referenceName="tree20">
+            <location row="0" col="17"/>
+          </obstacle>
+          <obstacle referenceName="tree12">
+            <location row="8" col="4"/>
+          </obstacle>
+          <obstacle referenceName="tree12">
+            <location row="8" col="8"/>
+          </obstacle>
+          <obstacle referenceName="radioactive">
+            <location row="1" col="1"/>
+          </obstacle>
+        </obstacles>
+      </gameEntities>
+    </board>
+      <screen> 
+        <camera type="roll">
+          <angle value="0.36"/>
+          <target x="405.92" y="178.25" z="470.0"/>
+          <position x="404.04" y="446.14" z="919.59`"/>
+          <distance value="523.36" near="0.1" far="10000.0"/>
+          <scrolling speed="20.0"/>
+        </camera>
+        <stage>
+          <dimensions cellSize="50" backgroundHeight="16" floorHeight="20" leftWidth="20" centerWidth="36" rightWidth="20"/>
+          <left>
+            <floor texture="Floor/dirt1000x1000" row="0" col="0"/>
+          </left>
+          <center>
+            <background texture="Backgrounds/house" row="15" col="4" zOrder="300" />
+            <background texture="Backgrounds/stonewall" row="0" col="14" zOrder="0" />
+            <background texture="Backgrounds/stonewall" row="25" col="14" zOrder="0" />
+            <floor texture="Floor/grass1000x1200" row="0" col="0"/>
+            <floor texture="Floor/grass1000x1200" row="16" col="0"/>
+          </center>
+          <right>
+            <floor texture="Floor/gravel1000x1000" row="0" col="0"/>
+          </right>
+      </stage>
+    </screen>
+    <audio>
+      <background name="Audio/LHGTrack2"/>
+    </audio>
+  </combat>
+</combatsystem>
